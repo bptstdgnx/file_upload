@@ -1,0 +1,6 @@
+<?php
+
+function hello_uninstall()
+{
+    /*NOTE: Cette fonction doit supprimer le fichier uploadé et le compteur à la désinstallation du module */
+}

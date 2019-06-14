@@ -1,0 +1,15 @@
+file_upload.file_upload:
+  path: '/admin/content/file-dl'
+  defaults:
+    _title: 'Uploadez votre fichier ici'
+    _form: '\Drupal\file_upload\Form\File_uploadForm'
+  requirements:
+    _access: 'TRUE'
+    _permission: 'administer file upload'
+file_upload.file-dl:
+  path: '/file-dl'
+  defaults:
+    _title: 'Téléchargez le fichier ici'
+    _controller: '\Drupal\file_upload\Controller\DownloadController'
+  requirements:
+    _access: 'TRUE'
